@@ -7,19 +7,63 @@
   <style>
     body {
       margin: 0;
-      height: 100vh; /* ビューポート全体の高さを指定 */
+      padding: 0;
       display: flex;
-      justify-content: center; /* 水平方向の中央揃え */
-      align-items: center; /* 垂直方向の中央揃え */
-      background-color: #262626; /* 背景色（例: 暗い色） */
-      color: #ffffff; /* テキストカラー（白） */
-      font-family: 'Arial', sans-serif; /* ゴシック体を指定 */
-      font-size: 36px; /* テキストサイズ */
-      text-align: center; /* テキストを中央揃え */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #262626; /* 背景色 */
+      color: #ffffff; /* テキストカラー */
+      font-family: 'Arial', sans-serif; /* ゴシック体 */
+      text-align: center;
+      height: 100vh; /* ビューポート全体の高さ */
+      box-sizing: border-box;
+    }
+
+    .images-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%; /* 横幅をデバイス幅に応じて調整 */
+      max-width: 600px; /* 最大幅を制限 */
+      margin-bottom: 20px; /* 画像とテキストの間に余白を追加 */
+    }
+
+    .images-container img {
+      width: 45%; /* 画像の幅をレスポンシブに調整 */
+      max-width: 100%; /* 画像の最大幅を制限 */
+      height: auto; /* 縦横比を維持 */
+    }
+
+    .coming-soon {
+      font-size: 24px; /* テキストサイズ */
+      margin-top: 20px; /* テキストと画像の間に余白 */
+    }
+
+    @media (max-width: 600px) {
+      .images-container {
+        flex-direction: column; /* スマホでは縦に並べる */
+        align-items: center;
+      }
+
+      .images-container img {
+        width: 70%; /* スマホでは画像を大きく表示 */
+        margin-bottom: 10px; /* 画像間の余白 */
+      }
+
+      .coming-soon {
+        font-size: 20px; /* スマホ向けにテキストサイズを調整 */
+      }
     }
   </style>
 </head>
 <body>
-  Coming Soon...
+  <div class="images-container">
+    <img src="DAWNL.jpg" alt="Left Image">
+    <img src="DAWNR.jpg" alt="Right Image">
+  </div>
+  <div class="coming-soon">
+    Coming Soon...
+  </div>
 </body>
 </html>
