@@ -4,7 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>テトナイト特典カードページ</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 全体のスタイル */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #262626;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      user-select: none; /* コピー防止 */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .gallery img {
+      max-width: 90%;
+      height: auto;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      pointer-events: none; /* 画像保存禁止 */
+    }
+
+    .gallery a {
+      text-decoration: none;
+      color: #1e90ff;
+    }
+
+    /* Special thanksセクション */
+    .special-thanks {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .special-thanks a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    .special-thanks a:hover {
+      text-decoration: underline;
+    }
+
+    /* レスポンシブ対応 */
+    @media (max-width: 600px) {
+      .gallery img {
+        max-width: 100%;
+      }
+
+      .special-thanks {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="gallery">
@@ -34,7 +96,14 @@
     <a href="https://twitter.com/vocabuki" target="_blank">
       <img src="images/vocabuki.png" alt="gust0">
     </a>
-    
+
+    <!-- Special thanksセクション -->
+    <div class="special-thanks">
+      <p>Special thanks</p>
+      <p>フライヤーイラスト <a href="https://x.com/mp777B" target="_blank">クマのみ</a></p>
+      <p>紹介画像素材提供 <a href="https://x.com/nbaji9" target="_blank">ンバヂ</a></p>
+      <p>and you...</p>
+    </div>
   </div>
 </body>
 </html>
