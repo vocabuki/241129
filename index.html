@@ -1,69 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #262626; /* 背景色 */
-      color: #ffffff; /* テキストカラー */
-      font-family: 'Arial', sans-serif; /* ゴシック体 */
-      text-align: center;
-      height: 100vh; /* ビューポート全体の高さ */
-      box-sizing: border-box;
-    }
-
-    .images-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 90%; /* 横幅をデバイス幅に応じて調整 */
-      max-width: 600px; /* 最大幅を制限 */
-      margin-bottom: 20px; /* 画像とテキストの間に余白を追加 */
-    }
-
-    .images-container img {
-      width: 45%; /* 画像の幅をレスポンシブに調整 */
-      max-width: 100%; /* 画像の最大幅を制限 */
-      height: auto; /* 縦横比を維持 */
-    }
-
-    .coming-soon {
-      font-size: 24px; /* テキストサイズ */
-      margin-top: 20px; /* テキストと画像の間に余白 */
-    }
-
-    @media (max-width: 600px) {
-      .images-container {
-        flex-direction: column; /* スマホでは縦に並べる */
-        align-items: center;
-      }
-
-      .images-container img {
-        width: 70%; /* スマホでは画像を大きく表示 */
-        margin-bottom: 10px; /* 画像間の余白 */
-      }
-
-      .coming-soon {
-        font-size: 20px; /* スマホ向けにテキストサイズを調整 */
-      }
-    }
-  </style>
+  <title>テトナイト特典カードページ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="images-container">
-    <img src="DAWNL.jpeg" alt="Left Image">
-    <img src="DAWNR.jpeg" alt="Right Image">
-  </div>
-  <div class="coming-soon">
-    Coming Soon...
+  <div class="gallery">
+    <img src="images/テトナ1.jpeg" alt="テトナ1">
+    <img src="images/テトナ2.jpeg" alt="テトナ2">
+
+    <div class="spacer"></div>
+
+    <a href="https://twitter.com/vocabuki" target="_blank">
+      <img src="images/vocabuki.png" alt="gust0">
+    </a>
+    <a href="https://twitter.com/hourouhekiheki" target="_blank">
+      <img src="images/gust1.jpeg" alt="gust1">
+    </a>
+    <a href="https://twitter.com/crycry_suzume" target="_blank">
+      <img src="images/gust2.jpeg" alt="gust2">
+    </a>
+    <a href="https://twitter.com/miriaru0913" target="_blank">
+      <img src="images/gust3.jpeg" alt="gust3">
+    </a>
+    <a href="https://twitter.com/yametoketteba" target="_blank">
+      <img src="images/gust4.jpeg" alt="gust4">
+    </a>
+    <a href="https://twitter.com/ea_miku" target="_blank">
+      <img src="images/gust5.jpeg" alt="gust5">
+    </a>
+    <a href="https://twitter.com/drag_on_3" target="_blank">
+      <img src="images/gust6.jpeg" alt="gust6">
+    </a>
   </div>
 </body>
 </html>
