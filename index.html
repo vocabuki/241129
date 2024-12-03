@@ -124,16 +124,17 @@
       <p>紹介画像素材提供 <a href="https://x.com/nbaji9" target="_blank">ンバヂ</a></p>
       <p>and you...</p>
     </div>
-    <!-- YouTube限定公開動画 -->
-    <div class="video-container">
+    <div style="position: relative; width: 560px; height: 315px;">
       <iframe 
         width="560" 
         height="315" 
-        src="https://www.youtube.com/embed/jjeIa3uWWAM?rel=0&origin=https://yourdomain.com" 
+        src="https://www.youtube.com/embed/jjeIa3uWWAM?rel=0&modestbranding=1&controls=1&showinfo=0" 
         frameborder="0" 
-        allowfullscreen>
+        allowfullscreen 
+        style="pointer-events: none;">
       </iframe>
-    </div>
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    </div>    
   </div>
 </body>
 </html>
